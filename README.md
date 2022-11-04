@@ -149,7 +149,7 @@ ct.fit = predict(ctree.model,newdata=z)
 plot(ctree.model,type="simple")
 ```
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Ctree.png">
+  <img width="800" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Ctree.png">
 </p>
 
 ### Graphing Rpart, Ctree, RandomForest, Cforest 
