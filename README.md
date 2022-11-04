@@ -79,7 +79,7 @@ Running a logistic regression tree on GUIDe using `s2` (the dataset with an extr
 ### 4. GUIDE tree 
 Running a linear regression tree on GUIDE using`s1` by modifying the description file with `charlson` coded as `s`, all other variables coded as `c`, `agecat` as `n` (numerical variable used both for splitting nodes and fitting node models). 
 
-### Plotting GUIDE tree, GUIDE logistic tree, and standard logistic model against GUIDE forest 
+### 5. Plotting GUIDE tree, GUIDE logistic tree, and standard logistic model against GUIDE forest 
 ```
 log_reg= read.csv("slm.csv")
 s2.pred = read.table("s2.pred", header= T)
