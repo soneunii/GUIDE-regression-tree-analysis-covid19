@@ -15,19 +15,19 @@ Consequently, by comparing all the trees splitted by the first, second, and thir
 ### Splitting with first best variable: agecat 
 `agecat`: age groups (0= 18-50, 1= 50-59, 2= 60-69, 3= 70-79, 4= 80-90 years old) 
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="700" height="360" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/1stSplitAgecat.png">
 </p>
 
 ### Splitting with second best variable: renal 
 `renal`: Renal disease (0= no, 1= yes) 
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="750" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/2ndSplitRenal.png">
 </p>
 
 ### Splitting with third best variable: CHF 
 `CHF`: Congestive Heart Failure (0= no, 1= yes) 
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="750" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/3rdSplitCHF.png">
 </p>
 
 
@@ -48,7 +48,7 @@ Each variable has their own predictive power, in other words, how important they
 
 From the graph below, we can tell each variable can have their importance scores reported with a very high confidence level, and as we know by having GUIDE report `agecat` as the best splitting variable, `agecat` shows the highest improtance score among all the other variables in this dataset. 
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="460" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/ImportanceScores.png">
 </p>
 
 
@@ -108,7 +108,7 @@ Tree",pch=".",xlim=c(0,0.7),ylim=c(0,0.7), col = "red")
 abline(coef = c(0,1),col="blue")
 ```
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="1000" height="360" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Plot1.png">
 </p>
 
 ## Comparing prediction accuracy (Rpart, Ctree, Cforest, RandomForest) 
@@ -130,7 +130,7 @@ rp.fit <- predict(rp, newdata=z)
 rpart.plot(rp,type=2)
 ```
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="460" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Rpart.png">
 </p>
 
 
@@ -149,7 +149,7 @@ ct.fit = predict(ctree.model,newdata=z)
 plot(ctree.model,type="simple")
 ```
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="460" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Ctree.png">
 </p>
 
 ### Graphing Rpart, Ctree, RandomForest, Cforest 
@@ -211,7 +211,7 @@ cex = 2,xlim=c(0,0.7),ylim=c(0,0.7), col = "red")
 abline(coef = c(0,1),col="blue")
 ```
 <p align="center">
-  <img width="460" height="460" src="https://github.com/soneunii/relative-humidity-on-covid-19/raw/main/Figure1.png">
+  <img width="460" height="460" src="https://github.com/soneunii/GUIDE-regression-tree-analysis-covid19/raw/main/Plot2.png">
 </p>
 
 ### Conclusion 
