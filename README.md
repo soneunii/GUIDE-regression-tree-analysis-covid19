@@ -1,6 +1,6 @@
 # GUIDE Regression Tree Analysis on Factors Affecting Probability on Dying from COVID-19 (GUIDE, R)
 
-What kind of people are more suceptible to dying from COVID-19 when they get infected? With a dataset reported from 21 healthsystems with 145,944 subjects hospitalized with COVID-19 collected from February 1st, 2020 to January 31, 2022:
+What kind of people are more suceptible to dying from COVID-19 when they get infected? With a dataset reported from 21 healthsystems with 145,944 subjects hospitalized with COVID-19 collected from February 1st, 2020 to January 31, 2022, I constructed different regression models to predict and compare their accuracies. 
 
 
 ## Constructing a GUIDE regression tree for estimating probability of death 
