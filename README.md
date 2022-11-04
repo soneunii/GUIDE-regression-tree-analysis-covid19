@@ -2,10 +2,6 @@
 
 What kind of people are more suceptible to dying from COVID-19 when they get infected? With a dataset reported from 21 healthsystems with 145,944 subjects hospitalized with COVID-19 collected from February 1st, 2020 to January 31, 2022:
 
-Goal was to find which characteristic of someone hospitalized for COVID-19 is the most significant in affecting one's proability in dying from the disease.
-Fitted a standard logistic model, GUIDE random forest, GUIDE logistic regression tree, and GUIDE tree to predict the probability of one dying from COVID-19, infer about th effects of the variables and the accuracy of the prediction models.
-Found predicted values from using Rpart, Ctree, Cforest, and RandomForest to compare its performance with that of GUIDE tree, and GUIDE forest.
-
 
 ## Constructing a GUIDE regression tree for estimating probability of death 
 By using GUIDE, I created a GUIDE regression tree to visualize splitting the data into more specific nodes, starting off by finding the 1st best varaible to split upon, 2nd, and 3rd best variable to split with. Each tree created as shown below is a piecewise constant least-squares regression tree for predicting `died`. If the condition is satisfied, an observation goes to the left branch. The italics reports the sample size and below, the mean of `died`. If the terminal node has a mean above 0.041, it is colored yellow, and if the mean is below 0.041, the node is colored blue.
